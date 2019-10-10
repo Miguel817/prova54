@@ -12,71 +12,64 @@ body{
         
 }
 
-#site{width:100%;
-    height:200px;
-    display: flex;
-    justify-content: space-around;
-				
-				
-    
+body {
+
+    color: rgb(243, 209, 167)
+
 }
-#site h1{width:100%;
-    height:100px;
+
+
+#site{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#site h1{
+    width:100%;
     color:rgb(9, 252, 259);
     font-family:'Beautiful Heart';
-    padding-left: 500px;
     font-size:80px;
     
-    
+   
 }
-#site h2{width:100%;
-    height:500px;
+#site h2{
+    width:100%;
     color:red; 
     font-family:'Elephant';
-    padding:50px;
     font-size:px;
-  
-
-
-
+    flex:2;
 }
+
 /*MENU*/
 #menu{
+    height:70PX;
+    width:100%;
+    text-align: center;
 
-    position: absolute;
-    left: 100px;
-    text-decoration:none;
 }
-#menu ul{ color: 'crimson';
-    
-    		
-}
+
 #menu ul li{
-				display:inline;
-                height:100px;
-                width:200px;
-                padding: 10px;
-                border: #ff0000;
-				background-color:#06ecec;
-				padding-top: 10px;
-                padding-right: 100px;
-                 padding-left: 100px;
-                position:relative;
-                font-family:'Bauhaus 93';
-                font-size: 20px;
-               margin: 10px;
-               
-               
+	display:inline;
+	background-color:#06ecec;				
+    padding: 10px 50px; 
+    margin: 0 5px;              
+    position:relative;
+    font-family:'Bauhaus 93';
+    font-size: 20px;     
 }
+
+#menu nav ul li i {
+                   color: #069;}
+
 #menu nav ul li a{
-    color: blue;
+    color: #069;
     width: 100px;
     height:100px;
-        text-decoration-color: bisque;
-        
-
-				
-				
+    text-decoration: none;
+}
+#menu nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: bisque;
 }
 
 #referencias h2{
@@ -110,3 +103,84 @@ color:white ;
 BODY
 body img{background-image:url('../Img/MIGUEL.jpeg');
  }
+
+#postagem{
+    color:#ff5555;
+    justify-content: center;
+    padding-right:1000px;
+
+}
+#img{padding: 10px;
+     align-items: center;
+     padding-left: 0px;
+     }
+     * { margin: 0 auto; padding: 0}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 50px;
+
+}
+
+
+
+.container nav ul li {
+	display: inline;
+	color: #fff;
+	padding: 10px 15px
+}
+
+
+@media screen and (max-width: 1000px){
+
+menu{color:red; 
+          width :100%;
+          padding-inline-end: ;
+     }
+	
+}
+@media screen and (min-width:200px){
+     
+}
+
+.container header {
+	width: 100%;
+	height: 50px;
+}
+
+.container .menu {
+	display: none;
+}
+
+.container .menu li {
+	display: block;
+	width: 100%;
+	background-color: #000;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#toggle:checked+.menu{
+	display: block;
+	height: 100%
+}
+
+img {
+	width: 100%;
+	height: auto
+}
+
+.content {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+} 
